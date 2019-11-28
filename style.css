@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.wrapper {
+    width: 750px;
+    min-height: 500px;
+    display: flex;
+}
+
+.main-content {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar {
+    height: 100vh;
+    width: 20%;
+    border-right: 1px solid grey;
+}
+
+.todo-card-container {
+    height: 90%;
+}
+
+.todo-card {
+    width: 400px;
+    min-height: 250px;
+    margin: 5em auto;
+    background: whitesmoke;
+    border: 1px solid rgba(70, 130, 180, 0.4);
+    border-radius: 0.2rem;
+}
+
+.todo-card .input-group-append button {
+    border: none;
+    border-radius: 0;
+}
+
+.todo-card .input-group-prepend span {
+    border-radius: 0 !important;
+}
+
+.todo-heading {
+    text-align: center;
+}
+
+.footer {
+    height: 10%;
+    padding: 1em 2em;
+    border-top: 0.5px solid rgba(0,128,128,0.5)
+}
+
+.footer p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.list-group-item {
+    /* padding-left: 0; */
+}
+
+.list-group-item span:first-child {
+    display: none;
+}
+
+.list-group-item span.checked {
+    display: inline-block;
+    opacity: 1;
+    position: relative;
+    left: -5px;
+}

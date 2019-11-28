@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chakra - Task Manager</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="wrapper">
+
+        <aside class="side-bar">
+            <button class="btn btn-sm btn-secondary">Menu</button>
+        </aside>
+        <section class="main-content">
+            <div class="todo-card-container">
+                <div class="todo-card">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="far fa-edit"></i></span>
+                        </div>
+                        <input type="text" name="text" id="text" class="form-control" placeholder="Enter task here...">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Submit</button>
+                        </div>
+                    </div>
+                    <!-- <h3 class="todo-heading">House chores</h3> -->
+                    <ul class="todo-list-items list-group list-group-flush">
+                        <li class="list-group-item active list-group-item-action"><span class="checked"><i class="far fa-check-circle"></i></span> Wash dishes <span><i class="fas fa-pen-square"></i> <i class="fas fa-trash-restore"></i></span></li>
+                        <li class="list-group-item list-group-item-action"><span><i class="far fa-check-circle"></i></span> Vacuum rug <span><i class="fas fa-pen-square"></i> <i class="fas fa-trash-restore"></i></span></li> 
+                        <li class="list-group-item list-group-item-action"><span><i class="far fa-check-circle"></i></span> Make dinner <span><i class="fas fa-pen-square"></i> <i class="fas fa-trash-restore"></i></span></li>
+                        <li class="list-group-item disabled list-group-item-action"><span><i class="far fa-check-circle"></i></span> Clean furniture <span><i class="fas fa-pen-square"></i> <i class="fas fa-trash-restore"></i></span></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p>Created By: Mayowa Ojo, © 2019</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
