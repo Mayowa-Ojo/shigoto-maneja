@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    font-family: 'Sulphur', monospace;
 }
 
 .wrapper {
@@ -20,7 +21,44 @@ html, body {
 .side-bar {
     height: 100vh;
     width: 20%;
-    border-right: 1px solid grey;
+    border-right: 1px solid rgba(0,0,0,.125);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+}
+
+.brand {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.brand i {
+    font-size: 1.5em;
+    color: rgb(107, 106, 104);
+}
+
+.menu-items {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.menu-items li {
+    padding: .5rem 1.25rem;
+}
+
+.contact {
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.125);
+    padding: 0.9em 1.6em;
+}
+
+.contact span {
+    margin: 0.2em;
 }
 
 .todo-card-container {
@@ -62,16 +100,34 @@ html, body {
 }
 
 .list-group-item {
-    /* padding-left: 0; */
+    cursor: pointer;
+}
+
+.list-group-item.checked {
+    text-decoration: line-through;
+    background: rgba(119,119,119,0.2);
 }
 
 .list-group-item span:first-child {
     display: none;
 }
 
-.list-group-item span.checked {
+.list-group-item.checked span {
     display: inline-block;
     opacity: 1;
     position: relative;
     left: -5px;
+}
+
+.list-group-item.checked span:nth-child(2) {
+    position: relative;
+    left: 1.2px;
+}
+
+.list-group-item span:nth-child(2) {
+    float: right;
+}
+
+.list-group-item span:nth-child(2) i {
+    cursor: pointer;
 }
