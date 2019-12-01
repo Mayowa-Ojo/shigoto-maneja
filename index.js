@@ -1,3 +1,6 @@
+// Imports
+import { generateId } from './utils.js'
+
 window.addEventListener('click', function() {
     // alert('This is a chrome extension')
     // chrome.storage.sync.set({message: "Chakra chrome extension is live"}, function() {
@@ -79,7 +82,9 @@ class Task extends App {
         const newTask = {
             title: inputElement.value,
             completed: false,
-            timestamp: new Date().toISOString()
+            timestamp: new Date().toISOString(),
+            id: generateId(),
+            due: new Date().toISOString()
         }
         // console.log(inputElement.value)
 
