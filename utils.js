@@ -3,9 +3,7 @@ export function generateId() {
 
     const build = () => {
         const next = JSON.stringify(Math.floor(Math.random() * 10))
-        console.log(string)
         string+=next
-        console.log(string)
 
         if(string.length > 6) {
             return
